@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	<TextView android:text="Latest GPS location"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"/>
+	<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5sp"
+			android:layout_marginLeft="5sp">
+		<TableLayout android:id="@+id/gps_table_layout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			<TableRow>
+				<TextView android:text="Latitude:"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:textStyle="bold"/>
+				<TextView android:id="@+id/gps_latitude"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5sp"/>
+			</TableRow>
+			<TableRow>
+				<TextView android:text="Longitude:"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:textStyle="bold"/>
+				<TextView android:id="@+id/gps_longitude"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5sp"/>
+			</TableRow>
+			<TableRow>
+				<TextView android:text="Accuracy:"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:textStyle="bold"/>
+				<TextView android:id="@+id/gps_accuracy"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5sp"/>
+			</TableRow>
+			<TableRow>
+				<TextView android:text="When:"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:textStyle="bold"/>
+				<TextView android:id="@+id/gps_age"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5sp"/>
+			</TableRow>
+		</TableLayout>
+		<LinearLayout android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5sp"
+				android:layout_marginRight="5sp"
+				android:layout_alignParentRight="true">
+			<Button android:id="@+id/use_gps_button"
+					android:text="Use this location"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+			<Button android:id="@+id/request_gps_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<TextView android:text="Latest network location"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="10sp"/>
+	<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5sp"
+			android:layout_marginLeft="5sp">
+		<TableLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			<TableRow>
+				<TextView android:text="Latitude:"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:textStyle="bold"/>
+				<TextView android:id="@+id/network_latitude"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5sp"/>
+			</TableRow>
+			<TableRow>
+				<TextView android:text="Longitude:"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:textStyle="bold"/>
+				<TextView android:id="@+id/network_longitude"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5sp"/>
+			</TableRow>
+			<TableRow>
+				<TextView android:text="Accuracy:"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:textStyle="bold"/>
+				<TextView android:id="@+id/network_accuracy"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5sp"/>
+			</TableRow>
+			<TableRow>
+				<TextView android:text="When:"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:textStyle="bold"/>
+				<TextView android:id="@+id/network_age"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5sp"/>
+			</TableRow>
+		</TableLayout>
+		<LinearLayout android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="5sp"
+				android:layout_marginTop="5sp"
+				android:layout_alignParentRight="true">
+			<Button android:id="@+id/use_network_button"
+					android:text="Use this location"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+			<Button android:id="@+id/request_network_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"/>
+		</LinearLayout>
+	</RelativeLayout>
+	<Button android:id="@+id/launch_map_button"
+			android:text="Select location from map"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15sp"
+			android:layout_gravity="center"
+			android:paddingLeft="15sp"
+			android:paddingRight="15sp"/>
+</LinearLayout>

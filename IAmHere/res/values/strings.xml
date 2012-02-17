@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="about_title">I Am Here 1.04</string>
+	<string name="about_text">This application sends and receives geo-tagged SMSes using the <b>GeoSMS</b>
+standard. For more information, visit <a href="http://geosms.wordpress.com">http://geosms.wordpress.com</a>
+\n\nWritten in 2010 by Matthew Kwan, a PhD Candidate in Geospatial Sciences at RMIT University\'s School of
+Mathematical and Geospatial Sciences, Melbourne, Australia.
+\n\nThis application is licensed under version 2.0 of the Apache Licence.
+\n\nVisit RMIT\'s mobile web site <a href="http://www.rmit.edu.au/mobile">www.rmit.edu.au/mobile</a>
+for other mobile apps, study options, news, and the latest RMIT YouTube videos, tweets, and flickr images.
+</string>
+</resources>

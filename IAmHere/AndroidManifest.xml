@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="au.com.darkside.iamhere"
+		android:versionCode="4"
+		android:versionName="1.04">
+    <application android:icon="@drawable/icon" 
+    		android:label="I Am Here">
+    	<uses-library android:name="com.google.android.maps" />
+        <activity android:name=".IAmHere"
+				android:label="I Am Here">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LocationSelector"
+				android:label="Select location"
+				android:screenOrientation="portrait">
+		</activity>
+		<activity android:name=".MapSelector"
+				android:label="Select location">
+		</activity>
+		<activity android:name=".GetMeThere"
+				android:label="Get me there"
+				android:screenOrientation="portrait"
+				android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".ReceivedMessageViewer"
+				android:label="Received messages">
+		</activity>
+		<receiver android:name=".SmsReceiver"> 
+            <intent-filter> 
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" /> 
+            </intent-filter> 
+        </receiver>
+    </application>
+    <uses-sdk android:minSdkVersion="4" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+</manifest> 
